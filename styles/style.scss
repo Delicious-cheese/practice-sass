@@ -1,0 +1,29 @@
+@import 'variable';
+@import 'button';
+// 这里文件的下划线是不用被 live sass compile直接编译，style.scss编译引入
+
+body {
+    background-color: $bgColor;
+
+    .outer {
+        color: $textColor;
+
+        &:hover {
+            background-color: $btnBackGroudColor;
+        }
+
+        &::after {
+            content: '2';
+        }
+
+        &::before {
+            content: 'a';
+        }
+    }
+
+    div {
+        button {
+            @include btnDisplay()
+        }
+    }
+}

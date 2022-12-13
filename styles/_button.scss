@@ -1,0 +1,9 @@
+@mixin btnDisplay {
+    border: none;
+    padding: 20px 90px;
+    border-radius: 10px;
+
+    &:hover {
+        background-color: bisque;
+    }
+}

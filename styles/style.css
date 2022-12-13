@@ -1,0 +1,23 @@
+body {
+  background-color: darkslateblue;
+}
+body .outer {
+  color: grey;
+}
+body .outer:hover {
+  background-color: pink;
+}
+body .outer::after {
+  content: "2";
+}
+body .outer::before {
+  content: "a";
+}
+body div button {
+  border: none;
+  padding: 20px 90px;
+  border-radius: 10px;
+}
+body div button:hover {
+  background-color: bisque;
+}/*# sourceMappingURL=style.css.map */
